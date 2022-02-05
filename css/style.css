@@ -127,7 +127,7 @@ h3.project {
 
 #img1 {
     grid-area: img1;
-    background: center / contain no-repeat url(images/diy.png);
+    background: center / contain no-repeat url(/images/diy.png);
     max-height: 600px;
 }
 
@@ -137,7 +137,7 @@ h3.project {
 
 #img2 {
     grid-area: img2;
-    background: center / contain no-repeat url(images/dnr.png);
+    background: center / contain no-repeat url(/images/dnr.png);
     height: 600px;
 }
 
@@ -147,7 +147,7 @@ h3.project {
 
 #img3 {
     grid-area: img3;
-    background: center / contain no-repeat url(images/ah.png);
+    background: center / contain no-repeat url(/images/ah.png);
     height: 570px;
 }
 
