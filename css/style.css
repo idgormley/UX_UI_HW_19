@@ -1,3 +1,60 @@
+/* nav bar */
+
+.navBar {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #1A1630;
+    align-items: center;
+    margin: -8px;
+    /* padding: 0px 24px; */
+    justify-content: space-between;
+    min-height: 88px;
+}
+
+#navigation {
+    display: flex;
+    flex: 3;
+    min-width: 351px;
+    align-items: center;
+    justify-content: end;
+    padding-right: 48px;
+}
+#menuButton {
+    display: none;
+}
+
+#menuBar {
+    visibility: hidden;
+}
+#navigation a, .left {
+    padding-left: 48px;
+}
+
+.left {
+    flex: 1;
+}
+
+.center {
+    justify-content: center;
+    flex: 2;
+}
+
+.right {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.icons {
+    transform: scale(.75);
+}
+
+.icons img {
+    cursor: pointer;
+    padding-left: 48px;
+}
+
+
 body {
     background-color: #28253D;
 }
@@ -21,27 +78,6 @@ body {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-}
-
-#hero h1 {
-    margin: 0px;
-    position: relative;
-    left: 124px;
-    color: #F5AE05;
-}
-
-#hero h3 {
-    margin: 0px;
-    position: relative;
-    left: 204px;
-    color: #00A7F8;
-}
-
-#hero p {
-    position: relative;
-    width: 59%;
-    max-height: 168px;
-    left: 238px;
 }
 
 #resume {
@@ -83,9 +119,11 @@ button {
     margin: 0px 5%;
     padding: 24px 0px;
 }
-.flexContainer h3{
+
+.flexContainer h3 {
     color: #00A7F8;
 }
+
 .flexContainer div {
     flex: 1;
     text-align: center;
@@ -122,7 +160,6 @@ h3.project {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
 }
 
 #img1 {
@@ -149,19 +186,20 @@ h3.project {
     grid-area: img3;
     background: center / contain no-repeat url(../images/ah.png);
     height: 570px;
+
 }
 
 #des3 {
     grid-area: des3;
 }
 
-
 /* Text syles */
+
 p {
     font-family: Mulish;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 1rem;
     line-height: 28px;
     color: #FDC767;
 }
@@ -183,6 +221,27 @@ h3, .left {
     color: #F5AE05;
 }
 
+#hero h1 {
+    margin: 0px;
+    position: relative;
+    left: 124px;
+    color: #F5AE05;
+}
+
+#hero h3 {
+    margin: 0px;
+    position: relative;
+    left: 204px;
+    color: #00A7F8;
+}
+
+#hero p {
+    position: relative;
+    width: 59%;
+    max-height: 168px;
+    left: 238px;
+}
+
 h4, a, button {
     font-family: Teko;
     font-style: normal;
@@ -193,67 +252,17 @@ h4, a, button {
     text-decoration: none;
 }
 
-/* nav bar */
 
-.navBar {
-    display: flex;
-    flex-flow: row wrap;
-    background-color: #1A1630;
-    align-items: center;
-    margin: -8px;
-    /* padding: 0px 24px; */
-    justify-content: space-between;
-    min-height: 88px;
-}
-
-.left {
-    flex: 1;
-    min-width: 112px;
-}
-
-#navigation {
-    display: flex;
-    flex: 3;
-    min-width: 351px;
-    align-items: center;
-    justify-content: end;
-    padding-right: 48px;
-}
-
-#navigation a, .left {
-    padding-left: 48px;
-}
-
-.center {
-    min-width: 131px;
-    justify-content: center;
-    flex: 2;
-}
-
-.right {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
-}
-
-.icons {
-    transform: scale(.75);
-}
-
-.icons img {
-    cursor: pointer;
-    padding-left: 48px;
-}
-
-img {
-    object-fit: contain;
-}
 
 /* mobile */
 
 @media only screen and (max-width: 600px) {
     #navigation {
         display: none;
+    }
+
+    #menuButton {
+        display:inline;
     }
 
     h1 {
@@ -300,7 +309,7 @@ img {
     }
 
     p {
-        font-size: 14px;
+        font-size: 1rem;
         line-height: 22px;
     }
 
@@ -310,15 +319,13 @@ img {
 
     .workGrid {
         gap: 24px;
-        grid-template-rows: 300px 300px 24px 300px 300px 24px 300px 300px;
         grid-template-columns: 1fr;
+
         grid-template-areas:
             "img1"
             "des1"
-            "."
             "img2"
             "des2"
-            "."
             "img3"
             "des3";
     }
