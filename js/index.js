@@ -15,3 +15,4 @@ console.log("Your index.js file is loaded correctly")
 //     menubar.style.visibility='visible'? resume.style.visibility='hidden' : resume.style.visibility='visible';
 // }
 
+$("")
