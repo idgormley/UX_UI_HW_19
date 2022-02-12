@@ -1,16 +1,47 @@
-$(document).ready(function(){
+$(document).ready(function () {
     console.log("Your index.js file is loaded correctly")
 
-    $("#resume").on('click',function(){
+    $('#skill').hide();
+
+    $('#work').hide();
+    $('#case1').hide();
+    $('#case2').hide();
+    $('#case3').hide();
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 10) {
+            $('#skill').fadeIn();
+
+        } else {
+            $('#skill').fadeOut();
+        }
+        if ($(this).scrollTop() > 500) {
+            $('#work').fadeIn();
+        } else {
+            $('#work').fadeOut();
+        }
+
+        if ($(this).scrollTop() > 700) {
+            $('#case1').fadeIn();
+        } else {
+            $('#case1').fadeOut();
+        }
+
+        if ($(this).scrollTop() > 1000) {
+            $('#case2').fadeIn();
+        } else {
+            $('#case2').fadeOut();
+        }
+
+        if ($(this).scrollTop() > 1500) {
+            $('#case3').fadeIn();
+        } else {
+            $('#case3').fadeOut();
+        }
+
 
     });
-    
-
-
 });
-
-
-
 // function menuButton{
 //     console.log('clicked button');
 
