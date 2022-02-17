@@ -15,7 +15,7 @@ $(document).ready(function () {
         } else {
             $('#skill').fadeOut();
         }
-        if ($(this).scrollTop() > 500) {
+        if ($(this).scrollTop() > 400) {
             $('#work').fadeIn();
         } else {
             $('#work').fadeOut();
