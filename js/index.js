@@ -21,19 +21,19 @@ $(document).ready(function () {
             $('#work').fadeOut();
         }
 
-        if ($(this).scrollTop() > 700) {
+        if ($(this).scrollTop() > 500) {
             $('#case1').fadeIn();
         } else {
             $('#case1').fadeOut();
         }
 
-        if ($(this).scrollTop() > 1000) {
+        if ($(this).scrollTop() > 700) {
             $('#case2').fadeIn();
         } else {
             $('#case2').fadeOut();
         }
 
-        if ($(this).scrollTop() > 1500) {
+        if ($(this).scrollTop() > 1000) {
             $('#case3').fadeIn();
         } else {
             $('#case3').fadeOut();
