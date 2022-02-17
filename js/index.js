@@ -7,6 +7,18 @@ $(document).ready(function () {
     $('#case1').hide();
     $('#case2').hide();
     $('#case3').hide();
+   
+    $('#skillNav').click(function () {
+    $('#skill').show();
+    });
+
+    $('#workNav').click(function () {
+    $('#work').show();
+    $('#case1').show();
+    $('#case2').show();
+    $('#case3').show();
+    });
+
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 10) {
@@ -27,13 +39,13 @@ $(document).ready(function () {
             $('#case1').fadeOut();
         }
 
-        if ($(this).scrollTop() > 700) {
+        if ($(this).scrollTop() > 1000) {
             $('#case2').fadeIn();
         } else {
             $('#case2').fadeOut();
         }
 
-        if ($(this).scrollTop() > 1000) {
+        if ($(this).scrollTop() > 1500) {
             $('#case3').fadeIn();
         } else {
             $('#case3').fadeOut();
